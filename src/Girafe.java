@@ -1,5 +1,5 @@
 public class Girafe extends Mammal implements Prey{
-    private String speciality = "Really tall";
+    private String speciality;
 
     public Girafe(String name, int age, int speed, String speciality) {
         super(name, age, speed);
@@ -12,5 +12,9 @@ public class Girafe extends Mammal implements Prey{
 
     public void setSpeciality(String speciality) {
         this.speciality = speciality;
+    }
+
+    public String toString() {
+        return super.toString() + "'Speciality' = " + speciality + "'}'";
     }
 }

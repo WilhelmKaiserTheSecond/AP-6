@@ -13,4 +13,9 @@ public abstract class Bird extends Animal{
         super(name, age);
         this.flyheight = flyheight;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", " + "flyheight = " + flyheight;
+    }
 }

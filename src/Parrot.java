@@ -1,4 +1,5 @@
 public class Parrot extends Bird implements Prey{
+    private String speciality;
     public Parrot(String name, int age, int flyheight, String speciality) {
         super(name, age, flyheight);
         this.speciality = speciality;
@@ -11,7 +12,8 @@ public class Parrot extends Bird implements Prey{
     public void setSpeciality(String speciality) {
         this.speciality = speciality;
     }
-
-    private String speciality = "A singer";
-
+    @Override
+    public String toString() {
+        return super.toString() + "'Speciality' = " + speciality + "'}'";
+    }
 }
