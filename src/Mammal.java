@@ -13,4 +13,9 @@ public abstract class Mammal extends Animal{
         super(name, age);
         this.speed = speed;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", " +"speed = " + speed;
+    }
 }
